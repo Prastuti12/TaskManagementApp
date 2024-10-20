@@ -33,6 +33,9 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+priorityOrder object is used to determine the priority order: high (1), medium (2), and low (3). This ensures that higher-priority tasks appear before lower-priority ones.
+The sortTasks function is applied to the task list within a useEffect hook
+Whenever the task list is updated (task added, edited, deleted, or marked as completed), the tasks are re-sorted to reflect any changes.
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
