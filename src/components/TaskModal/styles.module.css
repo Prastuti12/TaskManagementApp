@@ -1,0 +1,74 @@
+/* components/TaskModal.module.css */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is above other content */
+  }
+  
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px; /* You can adjust this */
+  }
+
+ .modalContent form{
+    display: flex;
+    flex-direction: column; 
+    
+  }
+
+
+   .modalContent input,
+  .modalContent textarea,
+  .modalContent select {
+    margin-bottom: 15px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+  }
+
+  .modalContent textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 80px; /* Minimum height */
+  }  
+
+ .modalContent button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    width: 30%;
+  }
+
+  .actionButtons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .modalContent button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .modalContent button[type="button"] {
+    background-color: #dc3545;
+  }
+  
+  .modalContent button[type="button"]:hover {
+    background-color: #c82333; 
+  }

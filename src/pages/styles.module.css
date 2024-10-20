@@ -1,0 +1,32 @@
+
+
+.main{
+    padding:10px 20px;
+}
+
+.navbarSection{
+    margin-bottom :20px;
+}
+
+.searchBar{
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+.addTaskButton{
+    background-color: #3b87d8; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    width: 20%;
+}
+
+.addTaskSection{
+    display: flex;
+    justify-content: space-between;
+}

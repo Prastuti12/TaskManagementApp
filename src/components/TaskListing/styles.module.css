@@ -1,0 +1,111 @@
+
+
+.listCard{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.taskCard{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.high , .medium , .low{
+    color:white;
+    height:fit-content;
+    width:fit-content;
+    border-radius: 4px;
+    text-align: center;
+    padding:5px 8px;
+}
+
+.high {
+    background-color: red; /* High priority */
+  }
+  
+  .medium {
+    background-color: rgb(164, 164, 44); /* Medium priority */
+  }
+  
+  .low {
+    background-color: green; /* Low priority */
+  }
+
+.functionalities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggleSwitchWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .toggleSwitch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 28px;
+  }
+  
+  .toggleSwitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #4caf50;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .statusText {
+    font-size: 14px;
+    color: #555;
+  }
+  
+
+
+  .taskActions{
+    cursor:pointer;
+    font-size: 25px;
+    display: flex;
+    gap:10px;
+  }
+
+  .deleteIcon{
+    color:red;
+  }
